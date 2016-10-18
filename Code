@@ -1,0 +1,42 @@
+package whatifactivity;
+import java.util.Scanner;
+
+public class WhatIfActivity {
+
+  
+    public static void main(String[] args) {
+        int id, amount,due, postTax;
+        String fname;
+        String lname;
+        String taxCode;
+        
+        postTax = 1;
+       
+       Scanner scan = new Scanner(System.in);
+       
+       //if()
+       
+        System.out.println("Input Customer ID.");
+        id = scan.nextInt();
+        
+        
+        System.out.println("Input Customer Name.");
+        fname = scan.next();
+        lname = scan.next();
+        
+        
+        System.out.println("Input Sales Amount.");
+        amount = scan.nextInt();
+       
+         
+        System.out.println("Input Tax Code");
+        taxCode = scan.next();
+        
+        System.out.println("Customer ID: " + id);
+        System.out.println("Customer Name: " + fname + lname);
+        System.out.println("Sales Amount: " + "$" + amount);
+        System.out.println("Tax Code: " + taxCode);
+        System.out.println("Total Amount Due: " + "$" + amount);
+    }
+    
+}
